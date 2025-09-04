@@ -1,0 +1,130 @@
+.footer-bg {
+  background-image: url(/專案/img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 卡片高度 */
+.h-100 {
+  height: 100%;
+}
+
+/* 文字 */
+.h3 {
+  font-family: Noto Sans TC;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  font-style: bold;
+}
+.h5 {
+  font-family: Noto Sans TC;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  font-style: bold;
+}
+.h6 {
+  font-family: Noto Sans TC;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  font-style: bold;
+}
+.text-t-r {
+  font-family: Noto Sans TC;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  vertical-align: middle;
+  font-style: regular;
+}
+.text-t-m {
+  font-family: Noto Sans TC;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  vertical-align: middle;
+  font-style: regular;
+}
+/*顏色*/
+:root {
+  --Primary-100: #598e71;
+  --Primary-dark: #1d6617;
+  --Neutral-0: #ffffff;
+  --Neutral-40: #9d9d9d;
+  --Neutral-60: #575757;
+  --Neutral-80: #1e1e1e;
+}
+/* 背景顏色 */
+.bg-pdark {
+  background-color: var(--Primary-dark);
+}
+/*文字顏色 */
+.p100 {
+  color: var(--Primary-100);
+}
+.pdark {
+  color: var(--Primary-dark);
+}
+.neu0 {
+  color: var(--Neutral-0);
+}
+.neu40 {
+  color: var(--Neutral-40);
+}
+.neu60 {
+  color: var(--Neutral-60);
+}
+.neu80 {
+  color: var(--Neutral-80);
+}
+/* 連結顏色 */
+
+.page-link {
+  color: none;
+  background-color: none;
+  border: none;
+}
+.page-neu80 {
+  color: var(--Neutral-80);
+}
+.page-bg-p100 {
+  background-color: var(--Primary-100);
+  color: var(--Neutral-0);
+}
+.btn-login:hover {
+  background-color: #2e7d32;
+  color: white;
+}
+/* 手風琴 */
+.accordion-item {
+  border: none;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.accordion-button::after {
+  filter: invert(0.5); /* 變成灰色 (0=黑, 1=白，可自行調整) */
+}
+.accordion-button {
+  background-color: var(--Neutral-0) !important;
+  color: var(--Primary-100) !important;
+  font-weight: bold;
+  border: none !important;
+}
+.accordion .active {
+  background-color: var(--Primary-dark);
+  color: var(--Neutral-0);
+  font-weight: bold;
+}
