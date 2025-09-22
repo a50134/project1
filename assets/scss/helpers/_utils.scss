@@ -26,6 +26,15 @@
   vertical-align: middle;
   font-style: bold;
 }
+.text-t-s {
+  font-family: Noto Sans TC;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  vertical-align: middle;
+  font-style: regular;
+}
 .text-t-r {
   font-family: Noto Sans TC;
   font-weight: 400;
@@ -77,12 +86,15 @@
 .mt-40 {
   margin-top: 40px;
 }
-
+.mx-md-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
 
 /* padding */
 .py-40 {
   padding: 40px 0;
 }
-.py-12{
+.py-12 {
   padding: 12px 0;
 }

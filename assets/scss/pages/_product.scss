@@ -7,6 +7,10 @@
   height: 100%;
 }
 
+/*麵包屑*/
+.breadcrumb-item-color {
+  color: var(--Primary-dark);
+}
 
 /* 連結顏色 */
 
@@ -31,19 +35,47 @@
   border: none;
 }
 .accordion-button:focus {
-  box-shadow: none ;
-  outline: none ;
+  box-shadow: none;
+  outline: none;
 }
 .accordion-button::after {
   filter: invert(0.5); /* 變成灰色 (0=黑, 1=白，可自行調整) */
 }
-.accordion-button {
-  background-color: var(--Neutral-0) ;
-  color: var(--Primary-100) ;
-  font-weight: bold;
-  border: none ;
-}
+// .accordion-button {
+//   background-color: var(--Primary-dark);
+//   color: var(--Neutral-0);
+//   font-weight: bold;
+//   border: none;
+// }
 .accordion .active {
+  background-color: var(--Primary-dark);
+  color: var(--Neutral-0);
+  font-weight: bold;
+}
+
+/* 右邊選單文字 */
+.label-line {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* 文字與線的間距 */
+  font-size: 16px;
+  color: #111;
+  /* 若容器有寬度限制可加 width: 100%; */
+}
+.label-line::after {
+  content: "";
+  flex: 1; /* 撐滿剩餘空間 */
+  height: 1px;
+  background: #d9d9d9; /* 線的顏色 */
+  border-radius: 1px; /* 線頭圓一點 */
+}
+
+/* 分頁 */
+.page-link:focus {
+  box-shadow: none;
+  outline: none;
+}
+.page-link .active {
   background-color: var(--Primary-dark);
   color: var(--Neutral-0);
   font-weight: bold;

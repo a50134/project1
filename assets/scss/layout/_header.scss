@@ -1,4 +1,33 @@
-.header{
-  background: #69F0AE;
+.header {
+  background: #69f0ae;
   font-size: 64px;
+}
+.menu-color {
+  color: var(--Neutral-60);
+}
+
+.navbar .container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* 搜尋框 */
+.search-box {
+  border-bottom: 2px solid #000; /* 只要下底線 */
+  width: 200px; /* 你可以自訂寬度 */
+}
+
+.search-input {
+  border: none; /* 移除預設邊框 */
+  outline: none; /* 移除點選時外框 */
+  flex: 1; /* 自動填滿剩餘空間 */
+  font-size: 16px;
+  padding: 5px 8px;
+}
+
+/* 搜尋 icon */
+.search-icon {
+  font-size: 18px;
+  margin-left: 5px;
+  cursor: pointer;
 }
