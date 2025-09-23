@@ -1,3 +1,10 @@
+/* 統一所有區塊的對齊 */
+.container {
+  max-width: 1296px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* 背景顏色 */
 .bg-pdark {
   background-color: var(--Primary-dark);
@@ -34,6 +41,18 @@
 .accordion-item {
   border: none;
 }
+.accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.list-group-item {
+  width: 100%;
+  padding-left: 1.5rem; /* 或根據設計稿調整 */
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
+
 .accordion-button:focus {
   box-shadow: none;
   outline: none;
@@ -41,14 +60,9 @@
 .accordion-button::after {
   filter: invert(0.5); /* 變成灰色 (0=黑, 1=白，可自行調整) */
 }
-// .accordion-button {
-//   background-color: var(--Primary-dark);
-//   color: var(--Neutral-0);
-//   font-weight: bold;
-//   border: none;
-// }
+
 .accordion .active {
-  background-color: var(--Primary-dark);
+  background-color: var(--Primary-100);
   color: var(--Neutral-0);
   font-weight: bold;
 }
@@ -69,7 +83,46 @@
   background: #d9d9d9; /* 線的顏色 */
   border-radius: 1px; /* 線頭圓一點 */
 }
+/* 統一 list-group-item 樣式 */
+.list-group-item {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  width: 100%;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  position: relative;
+  color: #333;
+  background-color: transparent;
+}
 
+/* 啟用項目的綠色指示線 */
+.list-group-item.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  /* 可依設計稿調整 */
+}
+
+/* 為了讓綠線不影響文字對齊，加入左側 padding */
+.list-group-item.active {
+  padding-left: 20px; /* 原本 16px + 4px 綠線寬度 */
+}
+
+/* 熱門專區標題樣式統一 */
+.label-line {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #333;
+  margin-bottom: 8px;
+}
 /* 分頁 */
 .page-link:focus {
   box-shadow: none;

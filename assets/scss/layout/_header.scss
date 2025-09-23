@@ -1,3 +1,11 @@
+/* 導航列對齊 */
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .header {
   background: #69f0ae;
   font-size: 64px;
@@ -6,15 +14,10 @@
   color: var(--Neutral-60);
 }
 
-.navbar .container {
-  max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 /* 搜尋框 */
 .search-box {
-  border-bottom: 2px solid #000; /* 只要下底線 */
-  width: 200px; /* 你可以自訂寬度 */
+  border-bottom: 1px solid var(--Neutral-40); /* 只要下底線 */
+  width: 202px; /* 你可以自訂寬度 */
 }
 
 .search-input {
@@ -27,7 +30,7 @@
 
 /* 搜尋 icon */
 .search-icon {
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 5px;
   cursor: pointer;
 }
