@@ -47,6 +47,11 @@
     outline: none;
     font-size: 16px;
   }
+  .menu-wrapper {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
   .search-box button {
     position: absolute;
